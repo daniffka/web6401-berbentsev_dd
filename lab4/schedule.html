@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FIT - Расписание</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <p class="header__logo">FIT<span class="header__logo-dot">.</span></p>
+        <nav class="header__nav">
+            <a class="header__link" href="index.html">Главная</a>
+            <a class="header__link" href="prices.html">Абонементы</a>
+            <a class="header__link header__link--active" href="schedule.html">Расписание</a>
+            <a class="header__link" href="contacts.html">Контакты</a>
+            <a class="header__link" href="signup.html">Запись</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <h1>Расписание групповых занятий</h1>
+        <p>Занятия: <span class="lesson--yoga">йога</span>, <span class="lesson--box">бокс</span>, <span class="lesson--cross">кроссфит</span>.</p>
+
+        <table class="table">
+            <tr class="table__row">
+                <th class="table__cell table__cell--head table__cell--left">Время</th>
+                <th class="table__cell table__cell--head table__cell--center">Пн</th>
+                <th class="table__cell table__cell--head table__cell--center">Вт</th>
+                <th class="table__cell table__cell--head table__cell--center">Ср</th>
+                <th class="table__cell table__cell--head table__cell--center">Чт</th>
+                <th class="table__cell table__cell--head table__cell--center">Пт</th>
+            </tr>
+            <tr class="table__row">
+                <td class="table__cell table__cell--left">08:00</td>
+                <td class="table__cell table__cell--center lesson--yoga">Йога</td>
+                <td class="table__cell table__cell--center"></td>
+                <td class="table__cell table__cell--center lesson--yoga">Йога</td>
+                <td class="table__cell table__cell--center"></td>
+                <td class="table__cell table__cell--center lesson--yoga">Йога</td>
+            </tr>
+            <tr class="table__row">
+                <td class="table__cell table__cell--left">12:00</td>
+                <td class="table__cell table__cell--center"></td>
+                <td class="table__cell table__cell--center lesson--cross">Кроссфит</td>
+                <td class="table__cell table__cell--center"></td>
+                <td class="table__cell table__cell--center lesson--cross">Кроссфит</td>
+                <td class="table__cell table__cell--center"></td>
+            </tr>
+            <tr class="table__row">
+                <td class="table__cell table__cell--left">18:00</td>
+                <td class="table__cell table__cell--center lesson--box">Бокс</td>
+                <td class="table__cell table__cell--center lesson--yoga">Йога</td>
+                <td class="table__cell table__cell--center lesson--box">Бокс</td>
+                <td class="table__cell table__cell--center lesson--yoga">Йога</td>
+                <td class="table__cell table__cell--center lesson--box">Бокс</td>
+            </tr>
+            <tr class="table__row">
+                <td class="table__cell table__cell--left">20:00</td>
+                <td class="table__cell table__cell--center lesson--cross">Кроссфит</td>
+                <td class="table__cell table__cell--center lesson--box">Бокс</td>
+                <td class="table__cell table__cell--center lesson--cross">Кроссфит</td>
+                <td class="table__cell table__cell--center lesson--box">Бокс</td>
+                <td class="table__cell table__cell--center lesson--cross">Кроссфит</td>
+            </tr>
+        </table>
+
+        <p>Записаться на занятие можно на странице <a href="signup.html">Запись</a>.</p>
+    </main>
+
+    <footer class="footer">
+        <p>Лабораторная работа №4</p>
+    </footer>
+</body>
+</html>
