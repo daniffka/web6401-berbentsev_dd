@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FIT - Запись</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <p class="header__logo">FIT<span class="header__logo-dot">.</span></p>
+        <nav class="header__nav">
+            <a class="header__link" href="index.html">Главная</a>
+            <a class="header__link" href="prices.html">Абонементы</a>
+            <a class="header__link" href="schedule.html">Расписание</a>
+            <a class="header__link" href="contacts.html">Контакты</a>
+            <a class="header__link header__link--active" href="signup.html">Запись</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <h1>Запись на пробную тренировку</h1>
+        <p>Заполни форму, и администратор перезвонит тебе.</p>
+
+        <form class="form" id="signup-form">
+            <div class="form__field">
+                <label class="form__label" for="name">Имя</label>
+                <input class="form__input" type="text" id="name" required>
+            </div>
+
+            <div class="form__field">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" type="email" id="email" required>
+            </div>
+
+            <div class="form__field">
+                <label class="form__label" for="phone">Телефон</label>
+                <input class="form__input" type="tel" id="phone" placeholder="+7 900 000-00-00" required>
+            </div>
+
+            <div class="form__field">
+                <label class="form__label" for="tariff">Абонемент</label>
+                <select class="form__input" id="tariff">
+                    <option>Разовый</option>
+                    <option>Утренний</option>
+                    <option>Стандарт</option>
+                    <option>Полгода</option>
+                    <option>Безлимит</option>
+                </select>
+            </div>
+
+            <div class="form__field">
+                <label class="form__label" for="date">Дата тренировки</label>
+                <input class="form__input" type="date" id="date" required>
+            </div>
+
+            <div class="form__field">
+                <span class="form__label">Удобное время</span>
+                <div class="form__radio-group">
+                    <label class="form__check"><input type="radio" name="time" value="Утро" checked> Утро</label>
+                    <label class="form__check"><input type="radio" name="time" value="День"> День</label>
+                    <label class="form__check"><input type="radio" name="time" value="Вечер"> Вечер</label>
+                </div>
+            </div>
+
+            <label class="form__check">
+                <input type="checkbox" id="agree" required>
+                Согласен на обработку персональных данных
+            </label>
+
+            <button class="button" type="submit">Отправить</button>
+
+            <p class="form__message" id="form-message"></p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Лабораторная работа №4</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
